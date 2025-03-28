@@ -70,21 +70,36 @@ Developed by: Priya.B
 RegisterNumber: 212224230208
 ```
 ```
-module EXP3(a,b,sum,carry);
+i)HALF ADDER
+
+module ha(a,b,sum,carry);
 input a,b;
 output sum,carry;
-assign sum= (a^ b);
+assign sum= (a ^ b);
 assign carry= ( a & b);
 endmodule
+ii)HALF SUBTRACTOR
+
+module hs(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference= (a ^ b);
+assign borrow= ( ~a & b);
+endmodule
+
+
 
 ```
 
 
 **RTL Schematic**
 ![RTL](https://github.com/user-attachments/assets/59ace306-39d4-4cfa-86f2-5e25213d2ec5)
+![RT](https://github.com/user-attachments/assets/6f4b19ff-55f8-44d1-935e-03c481e332c4)
+
 
 **Output/TIMING Waveform**
 ![OUTPUT](https://github.com/user-attachments/assets/f294b0af-be43-489d-bf00-be82242fa2b2)
+![OT](https://github.com/user-attachments/assets/979353c2-0267-4f0e-9634-ff6552646c26)
 
 **Result:**
 The truth table of logic gates in Quartus II using Verilog programming is verified
